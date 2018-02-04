@@ -1,0 +1,11 @@
+.DS_Store
+**/target/*
+**/spark-warehouse/*
+**/temp/*
+.project
+.settings/
+**/.project
+**/.settings
+**/checkpoint
+**/.springBeans
+
