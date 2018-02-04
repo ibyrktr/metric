@@ -1,6 +1,6 @@
 # IoT data pipeline - streaming
 
-This is a component streaming IoT data with Apache Kafka, Spark and Cassandra. The application uses spark structured streaming to store raw and aggregate data to Cassandra.
+This is a component streaming IoT data with Apache Kafka, Spark and Cassandra. The application uses Spark structured streaming to store raw and aggregate data to Cassandra.
 
 ## Phsical Data Definition
 Specifications for Cassandra tables storing raw and aggregated data can be found here: [schema] (metricconsumer/src/main/resources/setup.cql)
@@ -14,10 +14,10 @@ Specifications for Cassandra tables storing raw and aggregated data can be found
 * Streaming queries uses foreach writer to write to Cassandra tables. There are 6 cassandra tables: 2 for raw event data and 6 for aggregates.
 
 ## Deliverables
-* The package when build, delivers a spark application jar and three docker images: Kafka, Cassandra and Spark. When run, it will run the application in spark container.
+* The package when built, delivers a Spark application jar and three docker images: Kafka, Cassandra and Spark. When run, it will run the application in Spark container.
 
 * CAUTION: 
-** Do not modify the cassandra hostname in maven configuration. Changing the hostname will require a change on spark application code. See issue raised: (Spark application does not respect to cassandra host registered in the default SpakConf).  
+** Do not modify the Cassandra hostname in maven configuration. Changing the hostname will require a change on Spark application code. See issue raised: (Spark application does not respect to Cassandra host registered in the default SpakConf).  
 ** Cassandra docker image environment variable CASSANDRA_BROADCAST_ADDRESS in the maven pom uses default docker-machine ip 192.168.99.100. Please adjust it based on your settings if needed.
 
 ## Prerequisites

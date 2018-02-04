@@ -9,7 +9,7 @@ The fullstack solution uses Apache Kafka, Spark and Cassandra for streaming and 
 ## Basic generic event data generation and definition:
 ### Event
  - group
- - type thermostat, heart rate meter, car fuel readings
+ - type: thermostat, heart rate meter, car fuel readings
  - id
  - value
  - timestamp
@@ -34,7 +34,7 @@ querying average/median/max/min values for specific sensors or groups of sensors
 * Docker (17.12.0-ce) and docker machine (0.13.0)
 
 # Deliverables
-* Every package when build, delivers a jar and and docker images.
+* Every package when built, delivers a jar and and docker images.
 
 # Instructions
 * Clone the repository

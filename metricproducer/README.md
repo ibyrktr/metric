@@ -23,7 +23,7 @@ It uses basic generic event data definition for different device types:
 * Apache Kafka is required.
 
 # Deliverables
-* The package when build, delivers a jar and and a docker image. When run, it will run the jar in three containers to simulate an IoT device.
+* The package when built, delivers a jar and and a docker image. When run, it will run the jar in three containers to simulate an IoT device.
 
 ## Run
 
