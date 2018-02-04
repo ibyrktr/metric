@@ -7,14 +7,14 @@ The fullstack solution uses Apache Kafka, Spark and Cassandra for streaming and 
 # Requirements/Specifications
 
 ## Basic generic event data generation and definition:
-Event
+### Event
  - group
  - type thermostat, heart rate meter, car fuel readings
  - id
  - value
  - timestamp
 
-* Collect average/median/max/min on the aggregated data over a particular timeframe
+## Collect average/median/max/min on the aggregated data over a particular timeframe
 
 ## API: 
 querying average/median/max/min values for specific sensors or groups of sensors for a specific timeframe
