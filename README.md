@@ -49,8 +49,11 @@ mvn docker:start
 ```
 You will see containers running for 3 java apps (metricproducer1-3), kafka, cassandra, spark and Springboot app on Jetty (metricreader).
 
-##Build per component
+## Build per component
+
 [metricproducer](metricproducer/README.md)
+
 [metricconsumer](metricconsumer/README.md)
+
 [metricreader](metricreader/README.md)
 
