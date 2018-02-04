@@ -10,7 +10,7 @@ The fullstack solution uses Apache Kafka, Spark and Cassandra for streaming and 
 
 # Requirements/Specifications
 
-* Basic generic event data generation and definition:
+## Basic generic event data generation and definition:
 Event
  - group
  - type thermostat, heart rate meter, car fuel readings
@@ -41,13 +41,16 @@ querying average/median/max/min values for specific sensors or groups of sensors
 
 ## Build
 * Browse to metricparent
-Docker machine ip update on maven
-Dont change the cassandra image name.
-
-* Run mvn package
-* Run mvn docker:start
-
+* Docker machine ip update on maven
+* CAUTION: Do not change the cassandra host name.
+```
+mvn package
+mvn docker:start
+```
 You will see containers running for 3 java apps (metricproducer1-3), kafka, cassandra, spark and Springboot app on Jetty (metricreader).
 
-##links here
+##Build per component
+[metricproducer](metricproducer/README.md)
+[metricconsumer](metricconsumer/README.md)
+[metricreader](metricreader/README.md)
 
