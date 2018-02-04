@@ -20,17 +20,25 @@ It uses basic generic event data definition for different device types:
 - Use the id of the device as key in the producer message for partitioning to scale out.
 
 ## Prerequisites
-*Apache Kafka is required.
+* Apache Kafka is required.
+
+# Deliverables
+* The package when build, delivers a jar and and a docker image. When run, it will run the jar in three containers to simulate an IoT device.
 
 ## Run
+
+``` 
+    mvn docker:start
 ```
-    docker run bayraktar/metricproducer -it java -jar /opt/tools/metricproducer.jar -group home1 -id room3 -type THERM -kafkaHost relay42-kafka:9092 --log-driver json-file --log-opt max-size=10m max-file=5
+or
+```
+    docker run bayraktar/metricproducer -it java -jar /opt/tools/metricproducer.jar -group home1 -id room3 -type THERM -kafkaHost bayraktar-metrickafka:9092 --log-driver json-file --log-opt max-size=10m max-file=5
 ```
 
-** CAUTION Please specify the kafka host above.
+* CAUTION: Please specify the kafka host above.
 
 ## Build
-*Browse to metricproducer directory
+* Browse to metricproducer directory
 
 ```
     mvn package
