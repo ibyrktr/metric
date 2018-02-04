@@ -3,7 +3,9 @@
 **/spark-warehouse/*
 **/temp/*
 .project
-.settings/
+.settings
+.classpath
+**/.classpath
 **/.project
 **/.settings
 **/checkpoint
