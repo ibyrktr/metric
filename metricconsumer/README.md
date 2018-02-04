@@ -17,7 +17,7 @@ Specifications for Cassandra tables storing raw and aggregated data can be found
 * The package when built, delivers a Spark application jar and three docker images: Kafka, Cassandra and Spark. When run, it will run the application in Spark container.
 
 * CAUTION: 
-** Do not modify the Cassandra hostname in maven configuration. Changing the hostname will require a change on Spark application code. See issue raised: (Spark application does not respect to Cassandra host registered in the default SpakConf).  
+** Do not modify the Cassandra hostname in maven configuration. Changing the hostname will require a change on Spark application code. See issue raised: (Issue1. Spark application does not respect to Cassandra host registered in the default SpakConf).  
 ** Cassandra docker image environment variable CASSANDRA_BROADCAST_ADDRESS in the maven pom uses default docker-machine ip 192.168.99.100. Please adjust it based on your settings if needed.
 
 ## Prerequisites
