@@ -1,6 +1,6 @@
 # IoT data pipeline - streaming
 
-This is a component streaming IoT data with Apache Kafka, Spark and Cassandra. The application uses spark structured streaming to store raw and aggregate data to Cassandra.
+This is a component streaming IoT data with Apache Kafka, Spark and Cassandra. The application uses Spark structured streaming to store raw and aggregate data to Cassandra.
 
 ## Phsical Data Definition
 Specifications for Cassandra tables storing raw and aggregated data can be found here: [schema] (metricconsumer/src/main/resources/setup.cql)
